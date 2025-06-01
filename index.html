@@ -3,9 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PF | VitalFit</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playball&display=swap" rel="stylesheet">
+    <!-- slickのCSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <h1 class="lucida-grande">VitalFit</h1>
+            </div>
+            <button class="hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-inner">
+                <img class="mv-mens pc" src="images/mv-mens.png" alt="">
+                <img class="mv-woman pc" src="images/mv-woman.png" alt="">
+                <img class="mv-sp-img sp" src="images/mv-sp-img.png" alt="">
+                <div class="mv-text">
+                    <div class="catch-copy">
+                        <h2>あなたの<span>理想</span>の体型、</h2>
+                        <h2><span>最短</span>で実現します</h2>
+                    </div>
+                    <p class="mv-text-head">
+                        個別指導で最適なプランをご提案。<br>
+                        初心者から経験者まで、<br class="sp">すべての方に対応します。
+                    </p>
+                    <p class="mv-text-foot">
+                        VitalFitでは、あなたの目標に合わせた完全オーダーメイドのトレーニングプランをご提供。最新の設備と専門トレーナーの指導で、短期間で確かな効果を実感できます。
+                    </p>
+                    <div class="mv-btn">
+                        <a href="#">今すぐ無料体験を申し込む</a>
+                    </div>
+                </div>
+                <img class="mv-decoration-line" src="images/mv-decoration-line.png" alt="">
+            </div>
+        </div>
+
+        <!-- ナビゲーション展開 -->
+        <div class="header-nav" id="js-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#">
+                        <p class="item-large lucida-grande">TOP</p>
+                        <p class="item small">トップ</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features">
+                        <p class="item-large lucida-grande">FEATURES</p>
+                        <p class="item small">VitalFitの3つの特徴</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#result">
+                        <p class="item-large lucida-grande">RESULT</p>
+                        <p class="item small">VitalFitで得られる効果</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service">
+                        <p class="item-large lucida-grande">SERVICE</p>
+                        <p class="item small">サービス説明</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#price">
+                        <p class="item-large lucida-grande">PRICE</p>
+                        <p class="item small">料金プラン</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#trainer">
+                        <p class="item-large lucida-grande">TRAINER</p>
+                        <p class="item small">トレーナー紹介</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#flow">
+                        <p class="item-large lucida-grande">FLOW</p>
+                        <p class="item small">無料体験までの流れ</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#review">
+                        <p class="item-large lucida-grande">REVIEW</p>
+                        <p class="item small">利用者のレビュー</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq">
+                        <p class="item-large lucida-grande">FAQ</p>
+                        <p class="item small">よくある質問</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#company">
+                        <p class="item-large lucida-grande">COMPANY</p>
+                        <p class="item small">会社概要</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="header-sns">
+                <a href="https://www.facebook.com">
+                    <img src="images/facebook-icon.png" alt="">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="images/instagram-icon.png" alt="">
+                </a>
+                <a href="https://x.com/">
+                    <img src="images/x-icon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="features" id="features">
+            <div class="wrapper">
+                <div class="features-inner">
+                    <div class="heading">
+                        <h2 class="lucida-grande">FEATURES</h2>
+                        <h3>VitalFitの3つの特徴</h3>
+                    </div>
+                    <div class="features-container">
+                        <div class="features-content-one">
+                            <div class="triangle">
+                                <p class="lucida-grande">1</p>
+                            </div>
+                            <div class="feature-group">
+                                <h4>完全個別指導</h4>
+                                <p>
+                                    あなたの目標と体力に合わせた、世界に一つだけのトレーニングプラン。経験豊富なトレーナーが、細やかなフィードバックと調整を行い、最短で成果を出すサポートをします。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="features-content-two">
+                            <div class="triangle">
+                                <p class="lucida-grande">2</p>
+                            </div>
+                            <div class="feature-group">
+                                <h4>最新鋭の設備</h4>
+                                <p>
+                                    最新技術を取り入れたトレーニング機器を完備。安全かつ効果的なトレーニングが可能で、あなたの努力を最大限に引き出します。各種トレーニングマシンやフリーウェイトゾーンも充実しています。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="features-content-three">
+                            <div class="triangle">
+                                <p class="lucida-grande">3</p>
+                            </div>
+                            <div class="feature-group">
+                                <h4>食事指導と<br>メンタルサポート</h4>
+                                <p>
+                                    トレーニングだけでなく、食事面でも徹底サポート。プロの栄養士があなたに合った食事プランを提案し、トレーニング効果を最大化。さらに、メンタル面でも専門のスタッフがサポートし、モチベーションの維持をお手伝いします。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>

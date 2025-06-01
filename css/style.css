@@ -1,0 +1,571 @@
+body {
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    color: #444;
+}
+
+:root {
+    --white: #fff;
+    --red: #D90000;
+
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+.lucida-grande {
+    font-family: "Lucida Grande";
+}
+
+/* セクションタイトル */
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2 {
+        color: #EEE;
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin-top: -35px;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 50px;
+            height: 5px;
+            display: inline-block;
+            background-color: var(--red);
+            position: absolute;
+            bottom: -20px;
+            left: calc(50% - 25px)
+        }
+    }
+}
+
+
+/* ---------------------------------------------------
+PC
+--------------------------------------------------- */
+
+
+/* --------------------------------メインビジュアル */
+/* メイン背景 */
+.header {
+    background-image: url(/images/mv-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    min-height: 970px;
+    margin-bottom: 50px;
+}
+
+/* ヘッダー横幅 */
+.header-logo {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* VitalFit */
+h1 {
+    font-size: 60px;
+    background: linear-gradient(0deg, #D90000 25%, #FF5B5B 49%, #D90000 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    padding-top: 10px;
+}
+
+/* ハンバーガーメニュー */
+.hamburger {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(#FF5B5B 0%, #D90000 50%, #FF5B5B 100%);
+    border-radius: 30px;
+    position: fixed;
+    top: 25px;
+    right: 5%;
+    z-index: 99;
+
+    span {
+        width: 65%;
+        height: 2px;
+        margin: 8px auto;
+        background-color: var(--white);
+        position: relative;
+        transition: ease .4s;
+        display: block;
+    }
+}
+
+.hamburger span :nth-child(1) {
+    top: 0;
+}
+
+.hamburger span :nth-child(3) {
+    margin: 8px 0;
+}
+
+/* ハンバーガーメニュークリック後のスタイル */
+.hamburger.active span:nth-child(1) {
+    top: 10px;
+    transform: rotate(135deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    top: -10px;
+    transform: rotate(-135deg);
+}
+
+/* ハンバーガーメニュークリック後のスタイル */
+.header-nav.active {
+    transform: translate(0);
+}
+
+.header-inner {
+    position: relative;
+    height: 920px;
+}
+
+/* 男性画像 */
+.mv-mens {
+    width: 50%;
+    height: 860px;
+    object-fit: cover;
+}
+
+/* 女性画像 */
+.mv-woman {
+    height: 860px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: 10;
+}
+
+/* 中央テキスト */
+.mv-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+}
+
+/* メインキャッチコピー */
+.catch-copy {
+
+    h2 {
+        font-size: clamp(1.875rem, 1.083rem + 3.38vw, 4.125rem);
+        background-color: var(--white);
+        clip-path: polygon(7% 0, 100% 0, 93% 100%, 0 100%);
+        width: fit-content;
+        margin: 0 auto 20px;
+        padding: 0 60px;
+
+        span {
+            background-image: radial-gradient(circle at center, #FF5B5B 15%, transparent 5%); /* 点の色とサイズ調整 */
+            background-position: top 10px right; /* 点の位置 */
+            background-repeat: repeat-x; /* 横方向に繰り返し */
+            background-size: 1em 0.3em; /* 点の間隔とサイズ調整 */
+            padding-top: .4em; /* 縦方向の位置調整 */
+        }
+    }
+}
+
+/* サブコピー上部 */
+.mv-text-head {
+    color: var(--white);
+    font-size: clamp(1rem, 0.89rem + 0.47vw, 1.313rem);
+    font-weight: 600;
+}
+
+/* サブコピー下部 */
+.mv-text-foot {
+    color: var(--white);
+    background-image: url(/images/mv-red-gradation.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 130px;
+    place-content: center;
+    margin: 0 auto 100px;
+    padding: 30px 90px;
+}
+
+/* CTAボタン */
+.mv-btn {
+
+    a {
+        color: var(--white);
+        font-size: 30px;
+        font-weight: 600;
+        display: inline-block;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #D90000 0%, #F13B00 53%);
+        padding: 10px 50px;
+        transition-duration: .4s;
+
+        &::after {
+            content: url(/images/mv-btn-icon.png);
+            display: inline-block;
+            vertical-align: middle;
+            transform: scale(0.5);
+            margin-left: 10px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+/* ライン画像 */
+.mv-decoration-line {
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
+}
+
+/* ナビゲーション展開 */
+.header-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: #444;
+    transition: ease .5s;
+    z-index: 98;
+}
+
+.nav-list {
+    width: 375px;
+    margin: 0 auto;
+    padding: 120px 15px 20px;
+}
+
+.nav-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--red);
+
+    a {
+        color: var(--white);
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        width: fit-content;
+
+        .item-large {
+            font-size: 21px;
+        }
+    }
+}
+
+.header-sns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    a {
+        img {
+            width: 33px;
+            min-height: 33px;
+        }
+    }
+}
+
+
+/* --------------------------------FEATURES */
+.features-inner {
+    margin-bottom: 100px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-content-one,
+.features-content-two,
+.features-content-three {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 345px;
+    height: 312px;
+}
+
+.features-content-one {
+    background-image: url(/images/features1.png);
+}
+
+.features-content-two {
+    background-image: url(/images/features2.png);
+}
+
+.features-content-three {
+    background-image: url(/images/features3.png);
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 70px solid transparent;
+    border-left: 70px solid var(--red);
+    font-weight: bold;
+    z-index: 20;
+
+    p {
+        color: var(--white);
+        font-size: 30px;
+        position: absolute;
+        top: 0rem;
+        left: -4rem;
+    }
+}
+
+.feature-group {
+    padding: 25px;
+
+    h4 {
+        color: var(--red);
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    p {
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+SP
+--------------------------------------------------- */
+@media screen and (max-width: 767px) {
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    /* セクションタイトル */
+    .heading {
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 21px;
+            margin-top: -20px;
+
+            &::after {
+                bottom: -10px;
+            }
+        }
+    }
+
+    /* --------------------------------メインビジュアル */
+
+    /* ヘッダー横幅 */
+    .header-logo {
+        padding-left: 15px;
+    }
+
+    /* VitalFit */
+    h1 {
+        font-size: 45px;
+        padding-top: 15px;
+    }
+
+    /* ハンバーガーメニュー */
+    .hamburger {
+        top: 20px;
+    }
+
+    .mv-sp-img {
+        width: 100%;
+    }
+
+    /* 中央テキスト */
+    .mv-text {
+        top: 60%;
+    }
+
+    /* メインキャッチコピー */
+    .catch-copy {
+
+        h2 {
+            width: fit-content;
+            margin: 0 auto 10px;
+            padding: 0 30px;
+
+            span {
+                background-position: top 5px right; /* 点の位置 */
+            }
+        }
+    }
+
+    /* サブコピー下部 */
+    .mv-text-foot {
+        width: 100%;
+        margin: 0 auto 50px;
+        padding: 15px 30px;
+    }
+
+    /* CTAボタン */
+    .mv-btn {
+
+        a {
+            font-size: 21px;
+            padding: 10px 15px;
+        }
+    }
+
+    /* ナビゲーション展開 */
+    .header-nav {
+        width: 100vw;
+    }
+
+
+    /* --------------------------------FEATURES */
+    .features-inner {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .features-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features-content-one,
+    .features-content-two,
+    .features-content-three {
+        width: 345px;
+        height: 254px;
+    }
+
+    .features-content-one {
+        background-image: url(/images/features1-sp.png);
+    }
+
+    .features-content-two {
+        background-image: url(/images/features2-sp.png);
+    }
+
+    .features-content-three {
+        background-image: url(/images/features3-sp.png);
+    }
+
+    .feature-group {
+        padding: 15px;
+
+        h4 {
+            color: var(--red);
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-weight: 600;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
