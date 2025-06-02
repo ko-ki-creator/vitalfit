@@ -332,17 +332,20 @@ h1 {
     top: 0;
     right: 0;
     width: 50vw;
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 50px;
     transform: translateX(100%);
     background-color: #444;
     transition: ease .5s;
     z-index: 98;
+    overflow-y: scroll;
 }
 
 .nav-list {
     width: 375px;
     margin: 0 auto;
     padding: 120px 15px 20px;
+    overflow-y: scroll;
 }
 
 .nav-item {
@@ -572,6 +575,7 @@ h1 {
 }
 
 .price-inner {
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
