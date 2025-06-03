@@ -141,7 +141,7 @@ PC
 /* --------------------------------メインビジュアル */
 /* メイン背景 */
 .header {
-    background-image: url(/images/mv-back.png);
+    background-image: url(./images/mv-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -282,7 +282,7 @@ h1 {
 /* サブコピー下部 */
 .mv-text-foot {
     color: var(--white);
-    background-image: url(/images/mv-red-gradation.png);
+    background-image: url(./images/mv-red-gradation.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 640px;
@@ -445,7 +445,7 @@ h1 {
 
 /* --------------------------------RESULT */
 .result {
-    background-image: url(/images/result-back.png);
+    background-image: url(./images/result-back.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -569,7 +569,7 @@ h1 {
 
 /* --------------------------------PRICE */
 .price {
-    background-image: url(/images/price-back.png);
+    background-image: url(./images/price-back.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -717,7 +717,7 @@ h1 {
         transition-duration: .4s;
 
         &::after {
-            content: url(/images/mv-btn-icon.png);
+            content: url(./images/mv-btn-icon.png);
             display: inline-block;
             vertical-align: middle;
             transform: scale(0.5);
@@ -776,7 +776,7 @@ h1 {
 
 /* --------------------------------FLOW */
 .flow {
-    background-image: url(/images/flow-back.png);
+    background-image: url(./images/flow-back.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -911,7 +911,7 @@ h1 {
 
 /* --------------------------------FAQ */
 .faq {
-    background-image: url(/images/faq-back.png);
+    background-image: url(./images/faq-back.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
