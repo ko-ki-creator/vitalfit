@@ -285,6 +285,7 @@ h1 {
     background-image: url(./images/mv-red-gradation.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 640px;
     height: 130px;
     place-content: center;
@@ -451,6 +452,7 @@ h1 {
 }
 
 .result-inner {
+    margin-bottom: 50px;
     padding-top: 50px;
 }
 
@@ -779,6 +781,7 @@ h1 {
     background-image: url(./images/flow-back.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 75%;
 }
 
 .flow-inner {
@@ -798,6 +801,8 @@ h1 {
     color: var(--white);
     text-align: center;
     padding: 20px;
+    width: 85px;
+    height: 85px;
 
     .step {
         font-size: 30px;
@@ -1089,6 +1094,7 @@ SP
 
     /* セクションタイトル */
     .heading-black {
+        margin-bottom: 30px;
 
         h2 {
             font-size: 30px;
@@ -1110,6 +1116,7 @@ SP
     }
 
     .heading-white {
+        margin-bottom: 30px;
 
         h2 {
             font-size: 30px;
@@ -1210,7 +1217,17 @@ SP
 
     .features-img {
         width: 100%;
-        height: 18em;
+        height: 254px;
+    }
+
+    .triangle {
+        border-bottom: 80px solid transparent;
+        border-left: 80px solid var(--red);
+
+        p {
+            top: 0.4rem;
+            left: -4.5rem;
+        }
     }
 
     .feature-group {
@@ -1221,6 +1238,7 @@ SP
             font-size: 30px;
             margin-bottom: 20px;
             text-align: center;
+            line-height: 1em;
         }
 
         p {
@@ -1290,6 +1308,11 @@ SP
 
     /* --------------------------------PRICE */
     .price-inner {
+        margin-bottom: 50px;
+        padding: 50px 15px;
+    }
+
+    .price-inner-second {
         padding: 50px 15px;
     }
 
