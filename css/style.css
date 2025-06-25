@@ -581,6 +581,10 @@ h1 {
     padding-bottom: 50px;
 }
 
+.price-inner-second {
+    padding: 50px 15px;
+}
+
 .price-plan {
     display: flex;
     gap: 20px;
