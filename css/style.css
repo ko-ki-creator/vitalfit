@@ -394,14 +394,15 @@ h1 {
 .features-content {
     position: relative;
     width: 100%;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 25%);
+    border-radius: 10px;
 }
 
 .features-img {
     width: 100%;
     opacity: 0.2;
-    border-radius: 10px;
-    box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 25%);
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .card-text {
