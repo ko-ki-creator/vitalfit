@@ -806,8 +806,8 @@ h1 {
     color: var(--white);
     text-align: center;
     padding: 20px;
-    width: 85px;
-    height: 85px;
+    width: 120px;
+    height: 120px;
 
     .step {
         font-size: 30px;
