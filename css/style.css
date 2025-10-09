@@ -133,6 +133,32 @@ ul, li {
 }
 
 
+/* アニメーションスタイル */
+
+/* アニメーション前 */
+.u-fade-type-up{
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+/* トリガー発火でis-activeを付与 */
+.is-active .u-fade-type-up{
+    transition: .6s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.is-active .u-fade-type-up:nth-child(2){transition-delay: .4s;}
+.is-active .u-fade-type-up:nth-child(3){transition-delay: .8s;}
+.is-active .u-fade-type-up:nth-child(4){transition-delay: 1.2s;}
+.is-active .u-fade-type-up:nth-child(5){transition-delay: 1.6s;}
+.is-active .u-fade-type-up:nth-child(6){transition-delay: 2s;}
+.is-active .u-fade-type-up:nth-child(7){transition-delay: 2.4s;}
+.is-active .u-fade-type-up:nth-child(8){transition-delay: 2.8s;}
+.is-active .u-fade-type-up:nth-child(9){transition-delay: 3.2s;}
+.is-active .u-fade-type-up:nth-child(10){transition-delay: 3.6s;}
+
+
 /* ---------------------------------------------------
 PC
 --------------------------------------------------- */
